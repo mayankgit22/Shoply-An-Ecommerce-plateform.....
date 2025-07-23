@@ -1,12 +1,11 @@
 // middleware.ts
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+import { clerkMiddleware } from '@clerk/nextjs/server';
+
+export default clerkMiddleware();
 
 export const config = {
-  matcher: ['/((?!_next|.*\\..*).*)'],
-  runtime: 'nodejs',
+  matcher: [
+    '/((?!_next|.*\\..*).*)',
+    '/(api|trpc)(.*)',
+  ],
 };
-
-export function middleware(req: NextRequest) {
-  return NextResponse.next();
-}
