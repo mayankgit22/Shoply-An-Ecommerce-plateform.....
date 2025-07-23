@@ -1,12 +1,11 @@
 // middleware.ts
-import { authMiddleware } from "@clerk/nextjs";
+import { clerkMiddleware } from "@clerk/nextjs/server";
 
-export default authMiddleware();
+export default clerkMiddleware();
 
 export const config = {
   matcher: [
-    // Protect all routes except static files and public ones
-    "/((?!_next|.*\\..*|favicon.ico).*)",
-    "/(api|trpc)(.*)"
+    '/((?!_next|.*\\..*|favicon.ico).*)',
+    '/(api|trpc)(.*)',
   ],
 };
