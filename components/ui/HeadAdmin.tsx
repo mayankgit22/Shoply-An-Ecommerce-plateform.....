@@ -4,15 +4,15 @@ import React from 'react'
 import CartButton from './CartButton'
 import FavoriteBtn from './FavoriteBtn'
 // import SignInbtn from './SignInbtn'
-import {
-  ClerkProvider,
-ClerkLoaded,
-  SignInButton,
-  SignUpButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from '@clerk/nextjs'
+// import {
+//   ClerkProvider,
+// ClerkLoaded,
+//   SignInButton,
+//   SignUpButton,
+//   SignedIn,
+//   SignedOut,
+//   UserButton,
+// } from '@clerk/nextjs'
 // import { auth } from '@clerk/nextjs/server'
 function HeadAdmin() {
   // const auth=getAuth(req);
@@ -24,10 +24,10 @@ function HeadAdmin() {
         <Search className='hidden md:block  md:w-6 md:h-6 hover:text-green-600'/>
         <CartButton/>
         <FavoriteBtn />
-        <ClerkProvider>
-          <ClerkLoaded>
+{/* {/*         <ClerkProvider> */}
+{/*           <ClerkLoaded> */}
 
-        <SignedOut>
+{/*         <SignedOut>
           <div className=' justify-center items-center bg-black text-white rounded-4xl p-2 mt-1 cursor-pointer'>
 <div className='cursor-pointer m-0 text-sm sm:font-semibold md:text-md '>
 
@@ -41,9 +41,9 @@ function HeadAdmin() {
               <UserButton    />
 
               </div>
-            </SignedIn>
-          </ClerkLoaded>
-        </ClerkProvider>
+            </SignedIn> */}
+{/*           </ClerkLoaded> */} */}
+{/*         </ClerkProvider> */}
       
     </div>
   )
