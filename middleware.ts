@@ -8,4 +8,5 @@ export const config = {
     '/((?!_next|.*\\..*|favicon.ico).*)',
     '/(api|trpc)(.*)',
   ],
+    runtime: "nodejs"
 };
