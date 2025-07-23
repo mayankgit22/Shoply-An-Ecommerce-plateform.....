@@ -74,7 +74,8 @@ const cartProducts = React.useMemo(() => {
    {product?.images && <Image src={urlFor(product?.images[0]).url()} width={200} height={200} className='w-full h-40 object-contain' alt="img"   priority  />}
     <div className='w-[100%]'>
     <div>{product.name}</div>
-    <div className='font-bold'>${((product?.price)*(1-product?.discount/100))?.toFixed(2)}</div>
+  <div className='font-bold'>${product?.price && ((product.price * (1 - (product.discount ?? 0) / 100)).toFixed(2))}
+</div>
     <div className='line-through'>{(product?.price)?.toFixed(2)}</div>
     <div>In Stock:{product?.stock}</div></div>
     </div>
