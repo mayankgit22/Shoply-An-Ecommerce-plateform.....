@@ -112,14 +112,14 @@ const filteredProducts = products.filter((product) => {
   if(category.toLowerCase() === "all" && deal.toLowerCase() === "all" && price.toLowerCase() === "all" && availability.toLowerCase() === "all"){
     return product
   }
-   if (
-    category !== "All" &&
-    !product.categories?.some((cat) =>
-      cat.toLowerCase().includes(category.toLowerCase())
-    )
-  ) {
-    return false;
-  }
+  //  if (
+  //   category !== "All" &&
+  //   !product.categories?.some((cat) =>
+  //     cat.toLowerCase().includes(category.toLowerCase())
+  //   )
+  // ) {
+  //   return false;
+  // }
     if ( product?.stock && availability === "instock" && product?.stock <= 0) return false;
   if (  product?.stock && availability === "outofstock" && product?.stock > 0) return false;
     if (deal !== "All" && product.status !== deal) return false;
