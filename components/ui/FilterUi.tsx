@@ -6,9 +6,7 @@ export default function FilterUI() {
   const {price, setPrice, deal, setDeal, availability, setAvailability } =useFilter();
 // const { category } = useFilter();
 
-useEffect(() => {
-  console.log("Category changed:", category);
-}, [category]);
+
 
 
   return (
