@@ -115,7 +115,7 @@ const filteredProducts = products.filter((product) => {
    if (
     category !== "All" &&
     !product.categories?.some((cat) =>
-      cat._ref.toLowerCase().includes(category.toLowerCase())
+      cat.toLowerCase().includes(category.toLowerCase())
     )
   ) {
     return false;
