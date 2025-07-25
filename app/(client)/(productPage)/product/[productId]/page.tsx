@@ -120,7 +120,7 @@ const discount1=product?.discount as number;
 const discountedPrice=product?.price ? (product?.price-(product.price * discount1)/100).toFixed(2) : 'N/A';
 
   return (
-    <div className='h-screen'>
+    <div className='h-[max-content] relative'>
     <div className='grid grid-cols-1 gap-4 md:grid-cols-5 border-1 h-full px-6 py-4' >
       <div className='  md:col-span-2 border-1 flex justify-center items-center'>
         <div className='h-[100%] w-[100%]  p-2  relative  margin-auto'>
