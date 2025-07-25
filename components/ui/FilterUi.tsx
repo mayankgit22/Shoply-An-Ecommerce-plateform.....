@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import {useFilter} from "./FilterContext"
 
 export default function FilterUI() {
-  const { category, setCategory, price, setPrice, deal, setDeal, availability, setAvailability } =useFilter();
+  const {price, setPrice, deal, setDeal, availability, setAvailability } =useFilter();
 // const { category } = useFilter();
 
 useEffect(() => {
@@ -15,13 +15,13 @@ useEffect(() => {
     
     <div className="mb-3 grid grid-cols-1 gap-6   text-sm md:text-lg items-center md:grid-cols-4">
       <label htmlFor="category">Choose category:</label>
-      <select onChange={(e) => setCategory(e.target.value )} value={category} id="category">
+{/*       <select onChange={(e) => setCategory(e.target.value )} value={category} id="category">
         <option value="All">ALL</option>
         <option value="gadget">Gadget</option>
         <option value="appliances">Appliances</option>
         <option value="refrigerators">Refrigerators</option>
         <option value="other">Other</option>
-      </select>
+      </select> */}
 
       <label htmlFor="price">Choose price:</label>
       <select onChange={(e) => setPrice(e.target.value )} value={price} id="price">
