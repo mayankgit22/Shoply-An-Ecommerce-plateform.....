@@ -11,7 +11,7 @@ export default function FilterUI() {
 
   return (
     
-    <div className="mb-3 grid grid-cols-1 gap-5   text-sm md:text-lg items-center md:grid-cols-4">
+    <div className="mb-3 grid grid-cols-1 gap-5   text-sm md:text-lg items-center md:grid-cols-3">
 {/*       <label htmlFor="category">Choose category:</label> */}
 {/*       <select onChange={(e) => setCategory(e.target.value )} value={category} id="category">
         <option value="All">ALL</option>
